@@ -116,4 +116,17 @@ document.addEventListener('DOMContentLoaded', () => {
         select2: 'temp-select2',
         convert: conversions.temperature.convert.bind(conversions.temperature)
     });
+
+    const cards = document.querySelectorAll('.converter-card');
+
+    cards.forEach(clickedCard => {
+        clickedCard.addEventListener('click', () => {
+            cards.forEach(card => {
+                card.classList.remove('border-primary-500');
+                card.classList.add('border-gray-800');
+            });
+            clickedCard.classList.remove('border-gray-800');
+            clickedCard.classList.add('border-primary-500');
+        });
+    });
 });
