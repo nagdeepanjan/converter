@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <script src="tailwind.config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+    <div class="container mx-auto p-8 space-y-8">
+        <h1 class="text-4xl font-bold text-center mb-8">Unit Converter</h1>
+
+        <!-- Distance Converter -->
+        <div id="distance-card" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Distance</h2>
+            <div class="flex items-center space-x-4">
+                <div class="flex-1">
+                    <input type="number" id="dist-input1" class="w-full p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter value">
+                    <select id="dist-select1" class="w-full mt-2 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        <option value="m">Meters</option>
+                        <option value="km">Kilometers</option>
+                        <option value="ft">Feet</option>
+                        <option value="mi">Miles</option>
+                    </select>
+                </div>
+                <span class="text-2xl">=</span>
+                <div class="flex-1">
+                    <input type="number" id="dist-input2" class="w-full p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter value">
+                    <select id="dist-select2" class="w-full mt-2 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        <option value="ft">Feet</option>
+                        <option value="mi">Miles</option>
+                        <option value="m">Meters</option>
+                        <option value="km">Kilometers</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weight Converter -->
+        <div id="weight-card" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Weight</h2>
+            <div class="flex items-center space-x-4">
+                <div class="flex-1">
+                    <input type="number" id="weight-input1" class="w-full p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter value">
+                    <select id="weight-select1" class="w-full mt-2 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        <option value="kg">Kilograms</option>
+                        <option value="g">Grams</option>
+                        <option value="lb">Pounds</option>
+                        <option value="oz">Ounces</option>
+                    </select>
+                </div>
+                <span class="text-2xl">=</span>
+                <div class="flex-1">
+                    <input type="number" id="weight-input2" class="w-full p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter value">
+                    <select id="weight-select2" class="w-full mt-2 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        <option value="lb">Pounds</option>
+                        <option value="oz">Ounces</option>
+                        <option value="kg">Kilograms</option>
+                        <option value="g">Grams</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Temperature Converter -->
+        <div id="temp-card" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Temperature</h2>
+            <div class="flex items-center space-x-4">
+                <div class="flex-1">
+                    <input type="number" id="temp-input1" class="w-full p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter value">
+                    <select id="temp-select1" class="w-full mt-2 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        <option value="c">Celsius</option>
+                        <option value="f">Fahrenheit</option>
+                        <option value="k">Kelvin</option>
+                    </select>
+                </div>
+                <span class="text-2xl">=</span>
+                <div class="flex-1">
+                    <input type="number" id="temp-input2" class="w-full p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500" placeholder="Enter value">
+                    <select id="temp-select2" class="w-full mt-2 p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-primary-500">
+                        <option value="f">Fahrenheit</option>
+                        <option value="c">Celsius</option>
+                        <option value="k">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
